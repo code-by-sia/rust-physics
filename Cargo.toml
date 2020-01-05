@@ -1,0 +1,14 @@
+[package]
+name = "rust-physics"
+description = "hight performance physics library in rust for web"
+repository = "https://github.com/SiamandMaroufi/rust-physics"
+version = "0.0.1"
+authors = ["cyaxares <me@siamand.cc>"]
+edition = "2018"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
