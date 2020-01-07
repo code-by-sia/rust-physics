@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b104cf02-914f-4187-8e16-f1b823c31982" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust-physics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rust-physics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,24 +26,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state relative-caret-position="161">
+              <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
               <folding>
-                <element signature="n#tests#0" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1438#1439#0" expanded="true" />
+                <element signature="n#!!block;n#vector3d_set#0;n#tests#0" />
+                <element signature="e#173#185#0" />
+                <element signature="n#!!block;n#vector_add#0;n#tests#0" />
+                <element signature="e#611#685#0" />
+                <element signature="e#705#729#0" />
+                <element signature="n#!!block;n#subtract#0;n#tests#0" />
+                <element signature="e#846#941#0" />
+                <element signature="e#968#1042#0" />
+                <element signature="e#2837#2838#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#3073#3074#0" expanded="true" />
+                <element signature="e#3117#3118#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cargo.toml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -63,8 +61,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Cargo.toml" />
         <option value="$PROJECT_DIR$/src/Mathmatics/src/lib.rs" />
+        <option value="$PROJECT_DIR$/Cargo.toml" />
         <option value="$PROJECT_DIR$/src/lib.rs" />
       </list>
     </option>
@@ -119,10 +117,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test tests::vector_subtract">
-    <configuration name="Test tests::vector3d_set" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo Command.Test tests::vector_normalize">
+    <configuration name="Test tests::vector_normalize" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector3d_set -- --exact" />
+      <option name="command" value="test --package rust-physics --lib tests::vector_normalize -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -133,9 +131,35 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::vector_add" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::vector_scale" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_add -- --exact" />
+      <option name="command" value="test --package rust-physics --lib tests::vector_scale -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::vector_scale_by" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package rust-physics --lib tests::vector_scale_by -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::vector_size" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package rust-physics --lib tests::vector_size -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -161,9 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Test tests::vector_normalize" />
+        <item itemvalue="Cargo Command.Test tests::vector_size" />
+        <item itemvalue="Cargo Command.Test tests::vector_scale" />
+        <item itemvalue="Cargo Command.Test tests::vector_scale_by" />
         <item itemvalue="Cargo Command.Test tests::vector_subtract" />
-        <item itemvalue="Cargo Command.Test tests::vector_add" />
-        <item itemvalue="Cargo Command.Test tests::vector3d_set" />
       </list>
     </recent_temporary>
   </component>
@@ -185,32 +211,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_tests__vector3d_set - 2020.01.07 at 21h 35m 50s.xml">
-      <configuration name="Test tests::vector3d_set" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 14s.xml">
+      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector3d_set - 2020.01.07 at 21h 36m 18s.xml">
-      <configuration name="Test tests::vector3d_set" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 22s.xml">
+      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_add - 2020.01.07 at 21h 39m 04s.xml">
-      <configuration name="Test tests::vector_add" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 41s.xml">
+      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 39m 44s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 12s.xml">
+      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 39m 52s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 17s.xml">
+      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 40m 06s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 27s.xml">
+      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 40m 15s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 28s.xml">
+      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 40m 24s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 16s.xml">
+      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__vector_subtract - 2020.01.07 at 21h 43m 09s.xml">
-      <configuration name="Test tests::vector_subtract" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 26s.xml">
+      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 33s.xml">
+      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -262,21 +291,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore/ops/arith.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="310" column="8" lean-forward="true" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="161">
+          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
           <folding>
-            <element signature="n#tests#0" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="n#!!block;n#vector3d_set#0;n#tests#0" />
+            <element signature="e#173#185#0" />
+            <element signature="n#!!block;n#vector_add#0;n#tests#0" />
+            <element signature="e#611#685#0" />
+            <element signature="e#705#729#0" />
+            <element signature="n#!!block;n#subtract#0;n#tests#0" />
+            <element signature="e#846#941#0" />
+            <element signature="e#968#1042#0" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3117#3118#0" expanded="true" />
           </folding>
         </state>
       </provider>
