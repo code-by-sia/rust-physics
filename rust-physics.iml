@@ -7,6 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Mathmatics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Mathmatics/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Mathmatics/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Mathmatics/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Mathmatics/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
