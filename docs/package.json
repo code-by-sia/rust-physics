@@ -1,0 +1,21 @@
+{
+  "name": "rust-physics",
+  "collaborators": [
+    "cyaxares <me@siamand.cc>"
+  ],
+  "description": "hight performance physics library in rust for web",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SiamandMaroufi/rust-physics"
+  },
+  "files": [
+    "rust_physics_bg.wasm",
+    "rust_physics.js",
+    "rust_physics.d.ts"
+  ],
+  "module": "rust_physics.js",
+  "types": "rust_physics.d.ts",
+  "sideEffects": "false"
+}

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63cd583f-c02f-483b-a9a1-5a08b7de2c13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rust_physics.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rust_physics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rust_physics_bg.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rust_physics_bg.wasm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust-physics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rust-physics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +44,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
   </component>
   <component name="RunManager" selected="Cargo Command.build">
     <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -121,6 +134,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -135,6 +149,17 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.rs" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="514" y="261" width="641" height="561" key="#Unnamed" timestamp="1579448914070">
       <screen x="0" y="27" width="1680" height="1023" />
@@ -148,26 +173,34 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="298" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579448952851" />
+    <state x="242" y="1150" width="1166" height="568" key="DiffContextDialog" timestamp="1579469540794">
+      <screen x="142" y="1050" width="1366" height="768" />
+    </state>
+    <state x="242" y="1150" width="1166" height="568" key="DiffContextDialog/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579469540794" />
     <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579434585025">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579434585025" />
-    <state width="1634" height="267" key="GridCell.Tab.0.bottom" timestamp="1579449907212">
-      <screen x="0" y="27" width="1680" height="1023" />
+    <state width="1320" height="182" key="GridCell.Tab.0.bottom" timestamp="1579469439834">
+      <screen x="142" y="1050" width="1366" height="768" />
     </state>
-    <state width="1634" height="267" key="GridCell.Tab.0.bottom/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
-    <state width="1634" height="267" key="GridCell.Tab.0.center" timestamp="1579449907212">
-      <screen x="0" y="27" width="1680" height="1023" />
+    <state width="1634" height="267" key="GridCell.Tab.0.bottom/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579456688313" />
+    <state width="1320" height="182" key="GridCell.Tab.0.bottom/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579469439834" />
+    <state width="1320" height="182" key="GridCell.Tab.0.center" timestamp="1579469439834">
+      <screen x="142" y="1050" width="1366" height="768" />
     </state>
-    <state width="1634" height="267" key="GridCell.Tab.0.center/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
-    <state width="1634" height="267" key="GridCell.Tab.0.left" timestamp="1579449907212">
-      <screen x="0" y="27" width="1680" height="1023" />
+    <state width="1634" height="267" key="GridCell.Tab.0.center/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579456688312" />
+    <state width="1320" height="182" key="GridCell.Tab.0.center/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579469439834" />
+    <state width="1320" height="182" key="GridCell.Tab.0.left" timestamp="1579469439834">
+      <screen x="142" y="1050" width="1366" height="768" />
     </state>
-    <state width="1634" height="267" key="GridCell.Tab.0.left/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
-    <state width="1634" height="267" key="GridCell.Tab.0.right" timestamp="1579449907212">
-      <screen x="0" y="27" width="1680" height="1023" />
+    <state width="1634" height="267" key="GridCell.Tab.0.left/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579456688312" />
+    <state width="1320" height="182" key="GridCell.Tab.0.left/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579469439834" />
+    <state width="1320" height="182" key="GridCell.Tab.0.right" timestamp="1579469439834">
+      <screen x="142" y="1050" width="1366" height="768" />
     </state>
-    <state width="1634" height="267" key="GridCell.Tab.0.right/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
+    <state width="1634" height="267" key="GridCell.Tab.0.right/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579456688312" />
+    <state width="1320" height="182" key="GridCell.Tab.0.right/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579469439834" />
     <state x="329" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1579434631287">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
@@ -176,9 +209,10 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="500" y="366" key="com.intellij.ide.util.TipDialog/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579433686620" />
-    <state x="503" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1579446098247">
-      <screen x="0" y="27" width="1680" height="1023" />
+    <state x="551" y="1218" width="672" height="509" key="search.everywhere.popup" timestamp="1579467289408">
+      <screen x="142" y="1050" width="1366" height="768" />
     </state>
     <state x="503" y="251" width="672" height="678" key="search.everywhere.popup/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579446098247" />
+    <state x="551" y="1218" width="672" height="509" key="search.everywhere.popup/142.1050.1366.768/0.27.1680.1023@142.1050.1366.768" timestamp="1579467289408" />
   </component>
 </project>

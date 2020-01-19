@@ -169,6 +169,14 @@ impl Vector3D {
         self.z -= vector.z;
     }
 
+    pub fn diff(&self, vector: Vector3D) -> Vector3D {
+        Vector3D {
+            x: self.x - vector.x,
+            y: self.y - vector.y,
+            z: self.z - vector.z,
+        }
+    }
+
     pub fn scale_by(&mut self, factor: f64) {
         return self.scale(factor, factor, factor);
     }
@@ -179,6 +187,10 @@ impl Vector3D {
         let z2 = self.z.powf(2f64);
 
         return (x2 + y2 + z2).sqrt();
+    }
+
+    pub fn angle(&self) -> f64 {
+        return self.y.atan2(self.x);
     }
 
     pub fn normalize(&mut self) {
@@ -204,8 +216,8 @@ impl Vector3D {
 pub struct Particle {
     old_pos: Vector3D,
     pos: Vector3D,
+    origin_pos: Vector3D,
     velocity: Vector3D,
-    visible: bool,
     locked: bool,
     restitution: f64,
     friction: f64,
@@ -217,12 +229,12 @@ impl Particle {
     pub fn create(pos: &mut Vector3D, radius: f64) -> Particle {
         Particle {
             pos: pos.clone(),
+            origin_pos: pos.clone(),
             old_pos: pos.clone(),
             velocity: Vector3D { x: 0.0, y: 0.0, z: 0.0 },
-            visible: false,
             locked: false,
-            restitution: 0.8,
-            friction: 0.1,
+            restitution: 0.2,
+            friction: 0.2,
             radius,
         }
     }
@@ -231,9 +243,31 @@ impl Particle {
     pub fn get_y(&self) -> f64 { self.pos.y }
     pub fn get_z(&self) -> f64 { self.pos.z }
 
+    pub fn is_locked(&self) -> bool { self.locked }
+
+    pub fn lock(&mut self) {
+        self.locked = true;
+    }
+
+    pub fn unlock(&mut self) {
+        self.locked = false;
+    }
+
     pub fn get_restitution(&self) -> f64 { self.restitution }
     pub fn get_friction(&self) -> f64 { self.friction }
     pub fn get_radius(&self) -> f64 { self.radius }
+    pub fn get_velocity(&self) -> f64 {
+        self.velocity.size()
+    }
+    pub fn get_direction(&self) -> f64 {
+        return self.velocity.angle();
+    }
+
+    pub fn reset(&mut self) {
+        self.velocity.set(0.0, 0.0, 0.0);
+        self.pos.move_by(self.origin_pos.clone());
+        self.old_pos.move_by(self.origin_pos.clone());
+    }
 
     pub fn set_restitution(&mut self, value: f64) {
         self.restitution = value;
@@ -247,19 +281,65 @@ impl Particle {
 
     pub fn update(&mut self) {
         if !self.locked {
-            self.velocity.move_by(self.pos.clone());
+            self.velocity.set(self.pos.x, self.pos.y, self.pos.z);
             self.velocity.subtract(self.old_pos.clone());
-            self.old_pos.move_by(self.pos.clone());
-            self.pos.add(self.velocity.clone())
+            self.old_pos.set(self.pos.x, self.pos.y, self.pos.z);
+            self.pos.add(self.velocity.clone());
         }
     }
 
-    pub fn collide_ground(&mut self, ground_y: f64) {
-        if self.pos.y > ground_y - self.radius {
-            self.pos.y = ground_y - self.radius;
-            self.old_pos.y = self.get_y() + (self.velocity.get_y() * self.restitution).floor();
-            self.old_pos.x += (self.get_x() - self.old_pos.x) * self.friction;
-            self.old_pos.z += (self.get_z() - self.old_pos.z) * self.friction;
+    fn resist(&self) {
+        //TODO: decrease velocity based on old_pos
+    }
+
+    fn get_bounce_rate(&self, n: f64) -> f64 { n * (1f64 - self.restitution) }
+
+    fn collide_wall_y(&mut self, height: f64) {
+        if self.pos.y > height - self.radius {
+            self.pos.y = height - self.radius;
+            self.old_pos.y = height - self.radius + self.get_bounce_rate(self.velocity.y);
+            self.resist()
+        } else if self.pos.y < self.radius {
+            self.pos.y = self.radius;
+            self.old_pos.y = self.radius + self.get_bounce_rate(self.velocity.y);
+            self.resist()
+        }
+    }
+
+    fn collide_wall_x(&mut self, width: f64) {
+        if self.pos.x > width - self.radius {
+            self.pos.x = width - self.radius;
+            self.old_pos.x = width - self.radius + self.get_bounce_rate(self.velocity.x);
+            self.resist()
+        } else if self.pos.x < self.radius {
+            self.pos.x = self.radius;
+            self.old_pos.x = self.pos.x + self.get_bounce_rate(self.velocity.x);
+            self.resist()
+        }
+    }
+
+    fn collide_wall_z(&mut self, depth: f64) {
+        if self.pos.z > depth - self.radius {
+            self.pos.z = depth - self.radius;
+            self.old_pos.z = depth - self.radius + self.get_bounce_rate(self.velocity.z);
+            self.resist()
+        } else if self.pos.z < self.radius {
+            self.pos.z = self.radius;
+            self.old_pos.z = self.radius + self.get_bounce_rate(self.velocity.z);
+            self.resist()
+        }
+    }
+
+
+    pub fn collide_walls(&mut self, width: f64, height: f64, depth: f64) {
+        if !self.locked {
+            self.velocity.move_by(self.pos.clone());
+            self.velocity.subtract(self.old_pos.clone());
+            self.velocity.scale_by(self.friction);
+
+            self.collide_wall_x(width);
+            self.collide_wall_y(height);
+            self.collide_wall_z(depth);
         }
     }
 
@@ -273,7 +353,7 @@ impl Particle {
 
     pub fn accelerate_by(&mut self, force: Vector3D) {
         if !self.locked {
-            self.old_pos.add(force);
+            self.pos.add(force);
         }
     }
 
@@ -283,4 +363,3 @@ impl Particle {
         }
     }
 }
-

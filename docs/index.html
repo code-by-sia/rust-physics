@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics demo</title>
+    <script type="module">
+        import init from './rust_physics.js'
+        import { Vector3D, Particle } from './rust_physics.js'
+        var play=false;
+        var particle, gravity;
+
+        const width = 800;
+        const height= 640;
+        const depth = 400;
+
+        const el = document.getElementById('particle');
+
+
+
+        function update_el(){
+            let x= particle.get_x();
+            let y= particle.get_y();
+            let z= particle.get_z();
+            let v= Math.round(particle.get_velocity() * 100 ) / 100;
+            let d= Math.round(particle.get_direction() * 1800 / Math.PI)/10;
+
+            let pos = convertTo2D(x,y,z)
+
+            el.setAttribute('cx', pos.x);
+            el.setAttribute('cy', pos.y);
+            el.setAttribute('r', 10 + 30 * z / depth);
+
+            info.innerText = `x: ${x} \ny: ${Math.ceil(y)}\nz: ${z}\n\nVelocity: ${v}\nDirection: ${d} deg\n`;
+
+        }
+
+       function scale3D(z) {
+            return 10 + 30 * z / depth
+        }
+
+        function convertTo2D(x,y,z) {
+            const a = Math.atan2(y, x)
+            const f = Math.sqrt(x * x + y * y) ;//* scale3D(z);
+
+            return {
+                x: Math.cos(a) * f,
+                y: Math.sin(a) * f
+            }
+        }
+
+        function render() {
+            update_el();
+
+            particle.update();
+            particle.gravitate_by(gravity.clone());
+            particle.collide_walls(width, height, depth);
+
+            setTimeout(function(){
+                if(play) requestAnimationFrame(render)
+            }, 5);
+        }
+
+        async function run(){
+            await init();
+            console.log('Started')
+
+            let point = Vector3D.create(400, 100, 100);
+
+            gravity = Vector3D.create(0, 0.35,0);
+            particle = Particle.create(point, 42);
+            // particle.accelerate(-6,0,0)
+
+            window.p = particle;
+
+        }
+
+        run()
+
+
+        document.getElementById('btn').addEventListener('click', function (){
+            particle.accelerate(x.value,y.value,z.value);
+        });
+        document.getElementById('btn2').addEventListener('click', function (){
+            particle.set_friction(friction.value);
+        });
+        document.getElementById('btn2').addEventListener('click', function (){
+            particle.set_restitution(restitution.value);
+        });
+        document.getElementById('btn_play').addEventListener('click', function (){
+            play= !play;
+            render();
+        });
+        document.getElementById('btn_reset').addEventListener('click', function (){
+            particle.reset();
+            update_el();
+        });
+
+
+    </script>
+    <style>
+        html {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: grid;
+            align-content: center;
+            justify-items: center;
+        }
+        #view-port {
+            border: solid thin #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .container {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .container > div {
+            margin: 10px;
+            padding: 10px 20px;
+            border: solid thin #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display:inline-block;
+            min-width:100px;
+        }
+        input[type=number] {
+            width:50px;
+        }
+
+        pre {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <label>Force</label>
+        <p>
+            <label for="x">x axis:</label>
+            <input type="number" id="x" value="50"/>
+        </p>
+        <p>
+            <label for="y">y axis:</label>
+            <input type="number" id="y" value="50"/>
+        </p>
+        <p>
+            <label for="z">z axis:</label>
+            <input type="number" id="z" value="-50"/>
+        </p>
+        <button id="btn"> accelerate</button>
+    </div>
+    <div>
+        <p>
+            <label for="friction">friction:</label>
+            <input id="friction" type="number" value="0.2" min="0" max="1" step="0.05"/>
+        </p>
+        <p>
+            <label for="restitution">restitution:</label>
+            <input id="restitution" type="number" value="0.2" min="0" max="1" step="0.05" />
+        </p>
+        <button id="btn2"> apply</button>
+    </div>
+    <div>
+        <button id="btn_play">Play/pause</button>
+        <button id="btn_reset">Reset</button>
+        <pre id="info"></pre>
+    </div>
+</div>
+<svg height="640" width="800" id="view-port">
+    <circle id="particle" cx="400" cy="50" r="40" stroke="black" stroke-width="3" fill="red"/>
+</svg>
+
+</body>
+</html>
