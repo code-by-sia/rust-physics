@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63cd583f-c02f-483b-a9a1-5a08b7de2c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rust_physics.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rust_physics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rust_physics_bg.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rust_physics_bg.wasm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

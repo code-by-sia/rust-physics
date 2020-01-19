@@ -4,7 +4,7 @@
     "cyaxares <me@siamand.cc>"
   ],
   "description": "hight performance physics library in rust for web",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
