@@ -2,125 +2,48 @@
 <project version="4">
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/src/Mathmatics/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b104cf02-914f-4187-8e16-f1b823c31982" name="Default Changelist" comment="">
+    <list default="true" id="63cd583f-c02f-483b-a9a1-5a08b7de2c13" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust-physics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rust-physics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
-              <folding>
-                <element signature="n#!!block;n#vector3d_set#0;n#tests#0" />
-                <element signature="e#173#185#0" />
-                <element signature="n#!!block;n#vector_add#0;n#tests#0" />
-                <element signature="e#611#685#0" />
-                <element signature="e#705#729#0" />
-                <element signature="n#!!block;n#subtract#0;n#tests#0" />
-                <element signature="e#846#941#0" />
-                <element signature="e#968#1042#0" />
-                <element signature="e#2837#2838#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#3073#3074#0" expanded="true" />
-                <element signature="e#3117#3118#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Mathmatics/src/lib.rs" />
-        <option value="$PROJECT_DIR$/Cargo.toml" />
-        <option value="$PROJECT_DIR$/src/lib.rs" />
-      </list>
-    </option>
-  </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="iatCsfPo" />
+    <option name="directoryName" value="RumXTiRE" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="683" />
-    <option name="height" value="741" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="rust-physics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rust-physics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rust-physics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rust-physics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1Wc0filmdou1U0m3YDcvraveTtj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Cargo Command.Test tests::vector_normalize">
-    <configuration name="Test tests::vector_normalize" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo Command.build">
+    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_normalize -- --exact" />
+      <option name="command" value="test --package rust-physics --lib tests" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -131,9 +54,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::vector_scale" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::test_pointer" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_scale -- --exact" />
+      <option name="command" value="test --package rust-physics --lib tests::test_pointer -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -144,9 +67,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::vector_scale_by" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::vector3d_set" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_scale_by -- --exact" />
+      <option name="command" value="test --package rust-physics --lib tests::vector3d_set -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -157,9 +80,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::vector_size" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="build" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_size -- --exact" />
+      <option name="command" value="build" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -170,175 +93,92 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::vector_subtract" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package rust-physics --lib tests::vector_subtract -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="nocapture" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Cargo Command.build" />
+      <item itemvalue="Cargo Command.Test tests::vector3d_set" />
+      <item itemvalue="Cargo Command.Test lib::tests" />
+      <item itemvalue="Cargo Command.Test tests::test_pointer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Test tests::vector_normalize" />
-        <item itemvalue="Cargo Command.Test tests::vector_size" />
-        <item itemvalue="Cargo Command.Test tests::vector_scale" />
-        <item itemvalue="Cargo Command.Test tests::vector_scale_by" />
-        <item itemvalue="Cargo Command.Test tests::vector_subtract" />
+        <item itemvalue="Cargo Command.Test tests::test_pointer" />
+        <item itemvalue="Cargo Command.Test lib::tests" />
+        <item itemvalue="Cargo Command.Test tests::vector3d_set" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
-    <option name="version" value="2" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b104cf02-914f-4187-8e16-f1b823c31982" name="Default Changelist" comment="" />
-      <created>1578249791771</created>
+      <changelist id="63cd583f-c02f-483b-a9a1-5a08b7de2c13" name="Default Changelist" comment="" />
+      <created>1579433681133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578249791771</updated>
+      <updated>1579433681133</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 14s.xml">
-      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 22s.xml">
-      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_scale - 2020.01.07 at 21h 52m 41s.xml">
-      <configuration name="Test tests::vector_scale" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 12s.xml">
-      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 17s.xml">
-      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 27s.xml">
-      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_size - 2020.01.07 at 21h 54m 28s.xml">
-      <configuration name="Test tests::vector_size" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 16s.xml">
-      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 26s.xml">
-      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__vector_normalize - 2020.01.07 at 21h 56m 33s.xml">
-      <configuration name="Test tests::vector_normalize" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.rs" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3284553" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3284553" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Cargo" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Mathmatics/src/lib.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cargo.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore/ops/arith.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="310" column="8" lean-forward="true" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!block;n#vector3d_set#0;n#tests#0" />
-            <element signature="e#173#185#0" />
-            <element signature="n#!!block;n#vector_add#0;n#tests#0" />
-            <element signature="e#611#685#0" />
-            <element signature="e#705#729#0" />
-            <element signature="n#!!block;n#subtract#0;n#tests#0" />
-            <element signature="e#846#941#0" />
-            <element signature="e#968#1042#0" />
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#3073#3074#0" expanded="true" />
-            <element signature="e#3117#3118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="514" y="261" width="641" height="561" key="#Unnamed" timestamp="1579448914070">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="514" y="261" width="641" height="561" key="#Unnamed/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579448914070" />
+    <state x="240" y="261" width="1190" height="561" key="#build" timestamp="1579434603722">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="240" y="261" width="1190" height="561" key="#build/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579434603722" />
+    <state x="298" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579448952851">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="298" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579448952851" />
+    <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579434585025">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579434585025" />
+    <state width="1634" height="267" key="GridCell.Tab.0.bottom" timestamp="1579449907212">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.bottom/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
+    <state width="1634" height="267" key="GridCell.Tab.0.center" timestamp="1579449907212">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.center/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
+    <state width="1634" height="267" key="GridCell.Tab.0.left" timestamp="1579449907212">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.left/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
+    <state width="1634" height="267" key="GridCell.Tab.0.right" timestamp="1579449907212">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state width="1634" height="267" key="GridCell.Tab.0.right/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579449907212" />
+    <state x="329" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1579434631287">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="329" y="173" width="1022" height="737" key="SettingsEditor/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579434631287" />
+    <state x="500" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1579433686620">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="500" y="366" key="com.intellij.ide.util.TipDialog/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579433686620" />
+    <state x="503" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1579446098247">
+      <screen x="0" y="27" width="1680" height="1023" />
+    </state>
+    <state x="503" y="251" width="672" height="678" key="search.everywhere.popup/142.1050.1366.768/0.27.1680.1023@0.27.1680.1023" timestamp="1579446098247" />
   </component>
 </project>
