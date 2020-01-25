@@ -1,5 +1,5 @@
 # rust-physics
-hight performance physics library in rust for web
+hight performance 3D physics library in rust for web
 
 live demo: https://siamandmaroufi.github.io/rust-physics/
 
